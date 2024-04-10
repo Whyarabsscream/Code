@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+    <style type="text/css">.body { width: auto; }
+    
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+    </style>
+  </head>
+  <body>
+
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a class="active" href="/add">add</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+     
+  </body>
+</html>
+
+
+<meta name ="keywords" content="keywords" />
+<link rel="stylesheet" href ="..stylesheet.css" type="text/css" />
+
+
+<form action="/add" method="post">
+        
+  <input name="make" type="text" placeholder="Make">  <br/>
+  <input name="price" type="text" placeholder="price">  <br/>
+  <input name="model" type="text" placeholder="Model">  <br/>
+  <input name="image" type="text" placeholder="images">  <br/>
+
+  <input type="submit" value="show a phone">
+</form>

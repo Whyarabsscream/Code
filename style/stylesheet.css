@@ -1,0 +1,13 @@
+body {
+    background-color: #32cd32;
+  }
+p {
+  font-family:'Times New Roman', Times, serif ;
+  font-size:xx-large;
+    text-align: center;
+    color:black
+}
+.thumbnail{
+  max-height: 300px;
+  max-width:300px;
+}

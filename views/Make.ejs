@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: limegreen;
+}
+</style>
+</head>
+<body>
+
+<h1><%= result[0].Make %>'s Phone's</h1>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="../stylesheet.css" type="text/css" />
+    <style type="text/css">.body { width: auto; }</style>
+  </head>
+  <body>
+    <% result.forEach(function(item) { %> 
+      <br/><br/>
+      <p> <img src="images" style="width:30%"/> </p>
+      <%= item.Make %> <br/>
+      <%= item.Model %> <br/>
+      €<%= item.Price %> <br/>
+      <%= item.id %>
+      <% }); %>
+  </body>
+</html>

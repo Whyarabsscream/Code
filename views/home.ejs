@@ -1,0 +1,114 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+    <style type="text/css">.body { width: auto; }</style>
+  </head>
+  <body>
+    <style>
+    body {
+      background-color: limegreen;
+    }
+
+    div.relative {
+  position: relative;
+  right: 30px;
+  border: 3px solid #73AD21;
+}
+p {
+  text-align: center;
+ 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: hsl(0, 0%, 20%);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #b6a407;
+  color: rgb(255, 255, 255)
+}
+
+.column {
+  float: left;
+  width: 31%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+    </style>
+    </head>
+    <body> 
+
+        <div class="topnav">
+
+        <a class="active" href="#home">Home</a>
+        <a href="/add">Add</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+      
+       
+  </body> 
+
+  
+</html>
+
+<% result.forEach(function(item) { %> 
+
+  <div class="row">
+    <div class="column">
+      <br/><br/>
+
+      <p> <%= item.Id %>  </p>
+      <p> <a href="/individual/<%= item.Id %>">See This Phone</a> </p>
+       <p> <%= item.model %>   </p>
+       <p> <%= item.price %>   </p>
+         <p>   <br/> </p> 
+         <img src="<%=item.image%>" class="thumbnail"
+
+
+   <h4></h4>
+</div>
+  
+    <% }); %>
+  <br/><br/> 
+
+  
+
+    
+

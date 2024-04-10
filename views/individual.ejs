@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <style type="text/css">.body { width: auto; }
+
+body {
+  background-color: limegreen;
+}
+ 
+   .column {
+  float: center;
+  font-size: xx-large;
+  width: 31%;
+  padding: 15px;
+}
+/* Clear floats after the columns */
+.row::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+   </style>
+  
+  </head>
+  <body>
+        This Phone
+  </body>
+</html>
+
+<% result.forEach(function(item) { %> 
+
+  <div class="row">
+    <div class="column">
+      <br/><br/>
+  <br/><br/>
+  <%= item.image %> <br/>
+  <%= item.make %> <br/>
+  <%= item.model %> <br/>
+  <%= item.price %> <br/>
+  <%= item.id %>
+  <% }); %>
+    
